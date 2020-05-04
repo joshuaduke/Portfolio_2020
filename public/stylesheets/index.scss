@@ -1,3 +1,5 @@
+@import "_navbar.scss";
+
 *{
   margin:0;
   padding:0;
@@ -5,55 +7,30 @@
   line-height:1.5rem;
 }
 
+header {
+  text-align: center;
+  height:15vh;
+  padding:20px;
+}
 
 .split_two_rows{
   display:grid;
   grid-template-columns: 1fr 1fr;
 }
 
-#container{
-
-}
-
-aside{
-  height: 100vh;
-  padding:20px;
-  background-color:steelblue;
-  position:fixed;
-  z-index: 1;
-  top:0;
-  left:0;
-  overflow-x: hidden;
-
-  ul{
-    list-style-type: none;
-
-    li{
-      padding:5px 0;
-    }
-  }
-}
-
-#home{
-  margin-left:170px;
-  background-color:green;
-
-  header{
-    padding:20px;
-    background-color:yellow;
-    text-align:center;
-    height:45vh;
-    h1{
-      font-size:2em;
-
-    }
-  }
-}
-
 // ====== Contact ======
+
+#contact_header{
+  font-size:1.3em;
+  text-transform:uppercase;
+  margin-top:35px;
+}
 
 #contact{
   padding:20px;
+  margin-left:170px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 
   h1{
     font-size:2em;
@@ -62,12 +39,12 @@ aside{
   }
 }
 
-// #socials{
-
-// }
+#contact_sidebar{
+  @include lists();
+}
 
 #contact_form{
-  background:purple;
+  
 
   fieldset{
     border:none;
@@ -95,6 +72,13 @@ aside{
     width:100%;
     height:200px;
     resize: none;
+  }
+
+  #submit_btn{
+    padding:10px 30px;
+    border-radius: 0;
+    background-color:pink;
+    cursor:pointer;
   }
 
 }

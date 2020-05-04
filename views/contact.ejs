@@ -1,17 +1,25 @@
-<!-- <%- include ("../views/partials/header.ejs") %>  -->
+<%- include ("../views/partials/header.ejs") %> 
 
-<section id="contact_sidebar">
-  <h1>hello</h1>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, quasi quos! Iste tempore libero sequi perspiciatis debitis optio beatae! Necessitatibus adipisci animi quae dolor sapiente fuga, numquam illo? Odit maiores dolore consectetur, non eum nobis explicabo, libero distinctio consequatur assumenda fugiat sapiente dolorum animi nemo. Esse voluptas sapiente voluptate nihil, sed ad eveniet consectetur culpa aspernatur? Quaerat nostrum commodi rem officiis ipsa, similique sunt aspernatur recusandae corporis eius. Odit vel maxime exercitationem quo aliquid corporis dolorum aut officiis! Dignissimos, veniam aut? Quae nulla praesentium illum dolor qui et tempora vel voluptatum cum? Ut nemo fugit eos itaque laudantium. Sequi, possimus?</p>
-</section>
-
+<header>
+  <div id="contact_header">
+    <h1>Ask me anything...</h1>
+  </div>
+</header>
 
 <main id="contact">
-  
-  <!-- <section id="contact_form">
+  <section id="contact_sidebar">
+    <h3>Find me here:</h3>
+    <ul>
+      <li> <a href=""><i class="fab fa-linkedin fa-3x"></i></a> </li>
+      <li> <a href=""><i class="fab fa-github-square fa-3x"></i></a> </li>
+      <li> <a href=""><i class="fab fa-twitter fa-3x"></i></a> </li>
+      <li> <a href=""><i class="fab fa-instagram-square fa-3x"></i></a> </li>
+    </ul>
+
+  </section>
+
+  <section id="contact_form">
     <div >
-      <h1>Ask me anything...</h1>
-  
       <form action="" method>
   
         <fieldset>
@@ -27,20 +35,14 @@
         </fieldset>
         
         <fieldset>
-          <textarea name="" id="" placeholder="message">
-            
-          </textarea>
+          <textarea placeholder="Message"></textarea>
         </fieldset>
-        <input type="submit">
+        <button id="submit_btn">Submit</button>
       </form>
     </div>
-  </section> -->
-
+  </section>
   
 </main>
-
-
-
 
 
 <%- include ("../views/partials/footer.ejs") %> 
