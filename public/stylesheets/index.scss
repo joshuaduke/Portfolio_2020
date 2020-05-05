@@ -8,12 +8,20 @@
   line-height:1.5rem;
 }
 
+body{
+  background-color:rgb(244, 237, 227)
+}
+
 a{
   text-decoration:none;
 }
 
 h1,h2,h3,h4{
   font-family:$header;
+}
+
+i{
+  transition: 0.3s all;
 }
 
 header {
@@ -37,19 +45,21 @@ header {
 }
 
 #contact{
-  padding:20px;
-  margin-left:170px;
+  padding:80px;
+  margin-left:130px;
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
 
 #contact_sidebar{
+
   @include lists();
   padding-top:70px;
 
   h3{
-    padding-left:5px;
     font-weight:normal;
+    text-align: center;
+    padding-bottom:20px;
   }
 
   ul{
@@ -57,9 +67,25 @@ header {
   }
 
   i{
-    color: #000;
-    // background-color:#000;
     transition: 0.3s all;
+  }
+
+  .fa-linkedin{
+    color:black;
+
+    &:hover{
+      color:rgb(40,103,178);
+      background-color: #fff;
+    }
+  }
+  
+  .fa-github-square{
+    color:black;
+
+    &:hover{
+      color:#24292E;
+      background-color: #fff;
+    }
   }
 
   .fa-twitter{
@@ -74,14 +100,23 @@ header {
       border-color: rgb(29,161,242);
     }
   }
+
+  .fa-instagram-square{
+    color:black;
+     &:hover{
+       color:rgb(225,48,108);
+       background-color: #fff;
+     }
+   }
 }
 
 #contact_form{
+
   h1{
     font-size:1.5em;
     letter-spacing: 1px;
-    text-align:center;
-    padding:20px;
+    // text-align:center;
+    padding:20px 20px 20px 0;
     font-family: $header; 
     font-weight:normal;
   }
@@ -91,10 +126,12 @@ header {
     padding:10px 0;
   
     input{
-      padding:5px;
+      padding:10px;
       border-radius: 3px;
       border: 1px solid #e4e4e4;
-
+      &:focus{
+        outline-color: red;
+      }
     }
     
     .first_field:nth-last-of-type(1){
@@ -113,10 +150,17 @@ header {
   textarea{
     width:100%;
     height:200px;
+    padding:20px;
     resize: none;
     border:1px solid #e4e4e4;
     border-radius: 3px;
+
+    &:focus{
+      outline-color: red;
+    }
   }
+
+  
 
   #submit_btn{
     padding:10px 30px;
@@ -126,19 +170,4 @@ header {
   }
 }
 
-i{
-  transition: 0.3s all;
-}
 
-.fa-instagram-square:hover{
-  color:rgb(225,48,108);
-  background-color: #fff;
-}
-
-.fa-github-square:hover{
-  color:#24292E;
-}
-
-.fa-linkedin:hover{
-  color:rgb(40,103,178);
-}

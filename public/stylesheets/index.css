@@ -14,7 +14,7 @@
 }
 
 #container aside ul li {
-  padding: 10px 0;
+  padding: 12px 0;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -37,10 +37,6 @@
 
 #container aside p {
   font-size: 0.9em;
-}
-
-#container aside a:hover {
-  color: red;
 }
 
 #container aside i {
@@ -93,12 +89,21 @@
   line-height: 1.5rem;
 }
 
+body {
+  background-color: #f4ede3;
+}
+
 a {
   text-decoration: none;
 }
 
 h1, h2, h3, h4 {
   font-family: "Lato", sans-serif;
+}
+
+i {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 header {
@@ -122,8 +127,8 @@ header {
 }
 
 #contact {
-  padding: 20px;
-  margin-left: 170px;
+  padding: 80px;
+  margin-left: 130px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 5fr;
@@ -139,13 +144,14 @@ header {
 }
 
 #contact_sidebar ul li {
-  padding: 10px 0;
+  padding: 12px 0;
   font-family: "Montserrat", sans-serif;
 }
 
 #contact_sidebar h3 {
-  padding-left: 5px;
   font-weight: normal;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 #contact_sidebar ul {
@@ -153,9 +159,26 @@ header {
 }
 
 #contact_sidebar i {
-  color: #000;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+}
+
+#contact_sidebar .fa-linkedin {
+  color: black;
+}
+
+#contact_sidebar .fa-linkedin:hover {
+  color: #2867b2;
+  background-color: #fff;
+}
+
+#contact_sidebar .fa-github-square {
+  color: black;
+}
+
+#contact_sidebar .fa-github-square:hover {
+  color: #24292E;
+  background-color: #fff;
 }
 
 #contact_sidebar .fa-twitter {
@@ -171,11 +194,19 @@ header {
   border-color: #1da1f2;
 }
 
+#contact_sidebar .fa-instagram-square {
+  color: black;
+}
+
+#contact_sidebar .fa-instagram-square:hover {
+  color: #e1306c;
+  background-color: #fff;
+}
+
 #contact_form h1 {
   font-size: 1.5em;
   letter-spacing: 1px;
-  text-align: center;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   font-family: "Lato", sans-serif;
   font-weight: normal;
 }
@@ -186,9 +217,13 @@ header {
 }
 
 #contact_form fieldset input {
-  padding: 5px;
+  padding: 10px;
   border-radius: 3px;
   border: 1px solid #e4e4e4;
+}
+
+#contact_form fieldset input:focus {
+  outline-color: red;
 }
 
 #contact_form fieldset .first_field:nth-last-of-type(1) {
@@ -206,9 +241,14 @@ header {
 #contact_form textarea {
   width: 100%;
   height: 200px;
+  padding: 20px;
   resize: none;
   border: 1px solid #e4e4e4;
   border-radius: 3px;
+}
+
+#contact_form textarea:focus {
+  outline-color: red;
 }
 
 #contact_form #submit_btn {
@@ -216,23 +256,5 @@ header {
   border-radius: 3px;
   background-color: pink;
   cursor: pointer;
-}
-
-i {
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.fa-instagram-square:hover {
-  color: #e1306c;
-  background-color: #fff;
-}
-
-.fa-github-square:hover {
-  color: #24292E;
-}
-
-.fa-linkedin:hover {
-  color: #2867b2;
 }
 /*# sourceMappingURL=index.css.map */
