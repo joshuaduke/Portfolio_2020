@@ -31,6 +31,10 @@ header {
   padding:20px;
 }
 
+main{
+  margin-left:200px;
+}
+
 .split_two_rows{
   display:grid;
   grid-template-columns: 1fr 1fr;

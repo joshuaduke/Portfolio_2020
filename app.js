@@ -19,6 +19,10 @@ app.get("/contact", (req, res)=>{
   res.render("contact");
 });
 
+app.get("/resume", (req, res)=>{
+  res.render("resume");
+})
+
 
 app.listen(3000, process.env.PORT, ()=>{
   console.log("server has started");

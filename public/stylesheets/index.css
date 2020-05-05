@@ -65,22 +65,6 @@
   color: #fff;
 }
 
-#container #home {
-  margin-left: 170px;
-  background-color: green;
-}
-
-#container #home header {
-  padding: 20px;
-  background-color: yellow;
-  text-align: center;
-  height: 45vh;
-}
-
-#container #home header h1 {
-  font-size: 2em;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -111,6 +95,10 @@ header {
   text-align: center;
   height: 15vh;
   padding: 20px;
+}
+
+main {
+  margin-left: 200px;
 }
 
 .split_two_rows {
