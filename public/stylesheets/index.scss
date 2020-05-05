@@ -1,4 +1,5 @@
 @import "_navbar.scss";
+@import "_variables.scss";
 
 *{
   margin:0;
@@ -7,7 +8,16 @@
   line-height:1.5rem;
 }
 
+a{
+  text-decoration:none;
+}
+
+h1,h2,h3,h4{
+  font-family:$header;
+}
+
 header {
+  width:100%;
   text-align: center;
   height:15vh;
   padding:20px;
@@ -31,16 +41,20 @@ header {
   margin-left:170px;
   display: grid;
   grid-template-columns: 1fr 5fr;
-
-  h1{
-    font-size:2em;
-    text-align:center;
-    padding:20px;
-  }
 }
 
 #contact_sidebar{
   @include lists();
+  padding-top:70px;
+
+  h3{
+    padding-left:5px;
+    font-weight:normal;
+  }
+
+  ul{
+    text-align: center;
+  }
 
   i{
     color: #000;
@@ -54,27 +68,23 @@ header {
     background-color:#000;
     padding:4px;
     border-radius:3px;
-
+  
     &:hover{
       background-color: rgb(29,161,242);
       border-color: rgb(29,161,242);
     }
   }
-
-  .fa-instagram-square:hover{
-    color:rgb(225,48,108);
-  }
-
-  .fa-github-square:hover{
-    color:#24292E;
-  }
-
-  .fa-linkedin:hover{
-    color:rgb(40,103,178);
-  }
 }
 
 #contact_form{
+  h1{
+    font-size:1.5em;
+    letter-spacing: 1px;
+    text-align:center;
+    padding:20px;
+    font-family: $header; 
+    font-weight:normal;
+  }
 
   fieldset{
     border:none;
@@ -116,3 +126,19 @@ header {
   }
 }
 
+i{
+  transition: 0.3s all;
+}
+
+.fa-instagram-square:hover{
+  color:rgb(225,48,108);
+  background-color: #fff;
+}
+
+.fa-github-square:hover{
+  color:#24292E;
+}
+
+.fa-linkedin:hover{
+  color:rgb(40,103,178);
+}

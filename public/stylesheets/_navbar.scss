@@ -1,9 +1,13 @@
+@import "_variables.scss";
+
 @mixin lists {
   ul{
     list-style-type: none;
 
     li{
-      padding:5px 0;
+      padding:10px 0;
+      font-family: $text;
+      // text-transform:uppercase;
     }
   }
 }
@@ -12,7 +16,7 @@
   aside{
     height: 100vh;
     padding:20px;
-    background-color:steelblue;
+    background-color:#666;
     position:fixed;
     z-index: 1;
     top:0;
@@ -20,6 +24,56 @@
     overflow-x: hidden;
   
     @include lists();
+
+    h2{
+      font-family: $header;
+      padding:20px 0;
+      font-size:0.9em;
+      text-transform: uppercase;
+      color:#fff;
+      letter-spacing: 2px;
+      font-weight:normal;
+    }
+
+    a, p{
+      color:#fff;
+      letter-spacing:1px;
+      transition:0.3 all;
+    }
+
+    p{
+      font-size:0.9em;
+    }
+
+    a:hover{
+      color:red;
+    }
+
+    i{
+      padding:1px;
+      border-radius:2px;
+
+      &:hover{
+        background-color:#fff;
+        border-color: #fff;
+      }
+    }
+
+    .fa-twitter{
+      background-color:#fff;
+      color:#000;
+      font-size:20px;
+      padding:6px 4px 3px 4px;
+      border-radius:2px;
+      position: relative;
+      top:-3px;
+
+      &:hover{
+        background-color: rgb(29,161,242);
+        border-color: rgb(29,161,242);
+        color:#fff;
+      }
+    }
   }
   
   #home{
