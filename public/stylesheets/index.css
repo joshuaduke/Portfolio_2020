@@ -97,7 +97,7 @@ header {
   padding: 20px;
 }
 
-main {
+.offset_nav {
   margin-left: 200px;
 }
 
@@ -106,6 +106,20 @@ main {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+#about {
+  width: 90%;
+}
+
+#about_header {
+  background-color: red;
+  height: 30vh;
+}
+
+#about_header h1 {
+  padding: 40px 0 0 40px;
+  text-transform: uppercase;
 }
 
 #contact_header {
