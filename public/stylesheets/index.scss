@@ -9,15 +9,20 @@
 }
 
 body{
-  background-color:rgb(244, 237, 227)
+  background-color:$primary;
+}
+
+h1,h2,h3,h4{
+  font-family:$header;
+  color:$secondaryAcc;
 }
 
 a{
   text-decoration:none;
 }
 
-h1,h2,h3,h4{
-  font-family:$header;
+p{
+  // color:$medium;
 }
 
 i{
@@ -47,14 +52,51 @@ header {
 }
 
 #about_header{
-background-color:red;
 height: 30vh;
 
   h1{
     padding:40px 0 0 40px;
     text-transform: uppercase;
   }
+}
 
+.about_container{
+  padding:20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+#technical_skills{
+  padding:20px 0;
+
+  #skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+
+    div{
+      margin:0 10px;
+    }
+    i{
+      font-size: 2em;
+      padding:10px 0;
+    }
+  
+  }
+}
+
+// ====== Portfolio ======
+
+.project_container div{
+  width: 1000px;
+  height: auto;
+  margin:10px;
+}
+
+img{
+  max-width:100%;
+  height: auto;
+  border-radius:2px;
 }
 
 // ====== Contact ======

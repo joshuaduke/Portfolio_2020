@@ -16,7 +16,7 @@
   aside{
     height: 100vh;
     padding:20px;
-    background-color:#666;
+    background-color: $primaryAcc;
     position:fixed;
     z-index: 1;
     top:0;
@@ -30,13 +30,13 @@
       padding:20px 0;
       font-size:0.9em;
       text-transform: uppercase;
-      color:#fff;
+      color:$primary;
       letter-spacing: 2px;
       font-weight:normal;
     }
 
     a, p{
-      color:#fff;
+      color:$primary;
       letter-spacing:1px;
       transition:0.3 all;
     }
@@ -45,8 +45,12 @@
       font-size:0.9em;
     }
 
+    a{
+      transition: 0.3s all;
+    }
+
     a:hover{
-      // color:red;
+      color:$secondary;
     }
 
     i{
