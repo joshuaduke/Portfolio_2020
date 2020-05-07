@@ -83,7 +83,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 body {
@@ -97,6 +97,10 @@ h1, h2, h3, h4 {
 
 a {
   text-decoration: none;
+}
+
+p {
+  color: #14281D;
 }
 
 i {
@@ -135,7 +139,11 @@ header {
   text-transform: uppercase;
 }
 
-.about_container {
+#main_about p {
+  font-size: 1.2em;
+}
+
+#main_about .about_container {
   padding: 20px;
   display: -ms-grid;
   display: grid;
@@ -144,7 +152,7 @@ header {
 }
 
 #technical_skills {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 #technical_skills #skills {
@@ -161,6 +169,7 @@ header {
 
 #technical_skills #skills i {
   font-size: 2em;
+  color: #274156;
   padding: 10px 0;
 }
 
@@ -219,44 +228,31 @@ img {
   transition: 0.3s all;
 }
 
-#contact_sidebar .fa-linkedin {
-  color: black;
+#contact_sidebar .fa-linkedin, #contact_sidebar .fa-github-square, #contact_sidebar .fa-twitter, #contact_sidebar .fa-instagram-square {
+  color: #274156;
 }
 
 #contact_sidebar .fa-linkedin:hover {
   color: #2867b2;
-  background-color: #fff;
-}
-
-#contact_sidebar .fa-github-square {
-  color: black;
 }
 
 #contact_sidebar .fa-github-square:hover {
   color: #24292E;
-  background-color: #fff;
 }
 
 #contact_sidebar .fa-twitter {
-  border: 1px solid #000;
   color: #fff;
-  background-color: #000;
+  background-color: #274156;
   padding: 4px;
   border-radius: 3px;
 }
 
 #contact_sidebar .fa-twitter:hover {
   background-color: #1da1f2;
-  border-color: #1da1f2;
-}
-
-#contact_sidebar .fa-instagram-square {
-  color: black;
 }
 
 #contact_sidebar .fa-instagram-square:hover {
   color: #e1306c;
-  background-color: #fff;
 }
 
 #contact_form h1 {
@@ -279,7 +275,7 @@ img {
 }
 
 #contact_form fieldset input:focus {
-  outline-color: red;
+  outline-color: #1c6e8c;
 }
 
 #contact_form fieldset .first_field:nth-last-of-type(1) {
@@ -304,13 +300,22 @@ img {
 }
 
 #contact_form textarea:focus {
-  outline-color: red;
+  outline-color: #1c6e8c;
 }
 
 #contact_form #submit_btn {
   padding: 10px 30px;
   border-radius: 3px;
-  background-color: pink;
+  background-color: #1c6e8c;
+  color: #ECEBE4;
+  text-transform: uppercase;
   cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+#contact_form #submit_btn:hover {
+  background-color: #CC998D;
+  color: #14281D;
 }
 /*# sourceMappingURL=index.css.map */
