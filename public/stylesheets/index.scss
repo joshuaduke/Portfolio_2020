@@ -94,6 +94,12 @@ height: 30vh;
 
 // ====== Portfolio ======
 
+#portfolio{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
 .project_container div{
   width: 1000px;
   height: auto;
@@ -223,8 +229,6 @@ img{
       outline-color:$primaryAcc;
     }
   }
-
-  
 
   #submit_btn{
     padding:10px 30px;

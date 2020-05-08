@@ -173,6 +173,14 @@ header {
   padding: 10px 0;
 }
 
+#portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
 .project_container div {
   width: 1000px;
   height: auto;
