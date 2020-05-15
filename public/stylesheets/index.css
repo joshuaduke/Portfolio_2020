@@ -134,11 +134,6 @@ header {
   height: 30vh;
 }
 
-#about_header h1 {
-  padding: 40px 0 0 40px;
-  text-transform: uppercase;
-}
-
 #main_about p {
   font-size: 1.2em;
 }
@@ -173,9 +168,30 @@ header {
   padding: 10px 0;
 }
 
-#portfolio_id {
+#resume #resume_dwnl {
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  background-color: #1c6e8c;
+  color: #ECEBE4;
+  border: 1px solid #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+#resume #resume_dwnl:hover {
+  color: #fff;
+  background-color: #CC998D;
+}
+
+#resume img {
+  padding: 20px 0;
+}
+
+.portfolio_padding {
   padding: 40px 0 20px 0;
   margin-left: 200px;
+  text-align: center;
 }
 
 #portfolio {

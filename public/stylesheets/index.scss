@@ -54,10 +54,10 @@ header {
 #about_header{
 height: 30vh;
 
-  h1{
-    padding:40px 0 0 40px;
-    text-transform: uppercase;
-  }
+  // h1{
+  //   padding:40px 0 0 40px;
+  //   text-transform: uppercase;
+  // }
 }
 
 #main_about{
@@ -92,10 +92,34 @@ height: 30vh;
   }
 }
 
+// ====== Resume =========
+#resume{
+  #resume_dwnl{
+    width:100%;
+    padding:20px;
+    height:auto;
+    background-color:$primaryAcc;
+    color:$primary;
+    border:1px solid #fff;
+    transition: 0.3s all;
+    &:hover{
+      color:#fff;
+      background-color:$secondary;
+    }
+  }
+  
+  img{
+    padding:20px 0;
+  }
+}
+
+
+
 // ====== Portfolio ======
-#portfolio_id{
+.portfolio_padding{
   padding:40px 0 20px 0;
   margin-left:200px;
+  text-align: center;
 }
 
 
@@ -138,9 +162,8 @@ height: 30vh;
     }
 
   }
-
-
 }
+
 .project_container div{
   width: 1000px;
   height: auto;
