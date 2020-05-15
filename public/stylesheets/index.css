@@ -173,12 +173,52 @@ header {
   padding: 10px 0;
 }
 
+#portfolio_id {
+  padding: 40px 0 20px 0;
+  margin-left: 200px;
+}
+
 #portfolio {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  padding: 20px 0;
+  margin-right: 10px;
+}
+
+.project_container {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #1c6e8c;
+}
+
+.project_container h3 {
+  text-align: center;
+}
+
+.project_container .card_buttons {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.project_container .card_buttons .card_btn {
+  color: #ECEBE4;
+  border: 1px solid #14281D;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin: 0 auto;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.project_container .card_buttons .card_btn:hover {
+  color: #ECEBE4;
+  background-color: #CC998D;
+  border-color: #CC998D;
 }
 
 .project_container div {

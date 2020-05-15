@@ -93,13 +93,54 @@ height: 30vh;
 }
 
 // ====== Portfolio ======
+#portfolio_id{
+  padding:40px 0 20px 0;
+  margin-left:200px;
+}
+
 
 #portfolio{
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-gap:20px;
+  padding:20px 0;
+  margin-right:10px;
 }
 
+.project_container{
+  width:100%;
+  height:auto;
+  padding:20px;
+  border-radius:2px;
+  background-color: $primaryAcc;
+
+  h3{
+    text-align:center;
+  }
+
+  .card_buttons{
+    padding:20px 0;
+    text-align: center;
+
+    .card_btn{
+      color:$primary;
+      border:1px solid $medium;
+      border-radius:2px;
+      padding:5px 10px;
+      margin:0 auto;
+      transition: 0.3s all;
+
+      &:hover{
+        color:$primary;
+        background-color: $secondary;
+        border-color: $secondary;
+      }
+    }
+
+  }
+
+
+}
 .project_container div{
   width: 1000px;
   height: auto;
