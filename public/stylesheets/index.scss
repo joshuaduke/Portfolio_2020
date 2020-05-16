@@ -23,6 +23,7 @@ a{
 
 p{
   color:$medium;
+  font-family: $text;
 }
 
 i{
@@ -52,12 +53,13 @@ header {
 }
 
 #about_header{
-height: 30vh;
+  height: 30vh;
 
-  // h1{
-  //   padding:40px 0 0 40px;
-  //   text-transform: uppercase;
-  // }
+  p{
+    padding:10px 0;
+    letter-spacing: 1px;
+    color:$primaryAcc;
+  }
 }
 
 #main_about{
@@ -97,11 +99,13 @@ height: 30vh;
   #resume_dwnl{
     width:100%;
     padding:20px;
+    margin-left:46px;
     height:auto;
     background-color:$primaryAcc;
     color:$primary;
     border:1px solid #fff;
     transition: 0.3s all;
+
     &:hover{
       color:#fff;
       background-color:$secondary;
@@ -110,6 +114,7 @@ height: 30vh;
   
   img{
     padding:20px 0;
+    margin:0 46px;
   }
 }
 
